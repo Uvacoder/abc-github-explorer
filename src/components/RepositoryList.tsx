@@ -27,7 +27,7 @@ export function RepositoryList() {
         // converte a resposta para json e quando a resposta para json terminar
         // de ser convertida terá os dados do repositório.
 
-        fetch('https://api.github.com/users/alicecomoura/repos')
+        fetch('https://api.github.com/users/uvacoder/repos')
             .then(response => response.json())
             .then(data => setRepositories(data))
     }, []) 
@@ -40,7 +40,7 @@ export function RepositoryList() {
 
     return (
         <section className="repository-list">
-            <h1>Lista de repositórios</h1>
+            <h1>List of repositories</h1>
 
             <ul>
                 {repositories.map(repository => {
